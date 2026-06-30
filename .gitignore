@@ -1,6 +1,5 @@
 .vscode/
 cnn/
 test_results/
-checkpoint_best_loss.pth.tar
 experiments/
 __pycache__
