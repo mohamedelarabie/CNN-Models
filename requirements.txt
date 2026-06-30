@@ -1,0 +1,9 @@
+torch
+torchvision 
+h5py
+pyyaml
+torchmetrics
+matplotlib
+pandas
+accelerate
+tensorboard

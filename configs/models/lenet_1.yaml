@@ -1,0 +1,5 @@
+name: LeNet1
+num_layers: 3
+input_channels: [1, 4, 12]
+hidden_channels: [4, 12, 10]
+kernel_sizes: [5, 5, 4]
