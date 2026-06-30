@@ -1,1 +1,6 @@
 name: LeNet5
+num_layers: 2
+input_channels: [1, 6]
+hidden_channels: [6, 16]
+kernel_sizes: [5, 5]
+linear_layers: [400, 120, 84, 10]

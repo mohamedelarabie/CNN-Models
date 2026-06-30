@@ -8,7 +8,7 @@ def save_checkpoint(accelerator, state, is_best, filename="checkpoint.pth.tar"):
         return None
     torch.save(state, filename)
     if is_best:
-        best_filename = filename.replace(filename.split('/')[-1], "checkpoint_best_loss.pth.tar")
+        best_filename = filename.replace(filename.split('\\')[-1], "checkpoint_best_loss.pth.tar")
         shutil.copyfile(filename, best_filename)
 
 

@@ -131,7 +131,7 @@ def main():
                     "optimizer": optimizer.state_dict(),
                 },
                 is_best,
-                os.path.join(experiment_path, "checkpoints","checkpoint_%03d.pth.tar" % (epoch + 1))
+                os.path.join(checkpoint_path,"checkpoint_%03d.pth.tar" % (epoch + 1))
             )
             if is_best:
                 logger_test.info('best checkpoint saved.')

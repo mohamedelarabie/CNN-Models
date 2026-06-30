@@ -33,7 +33,7 @@ class model(nn.Module):
             layers.append(conv_block(input_channels[i], hidden_channels[i], kernel_sizes[i]))
         
         self.features = nn.Sequential(*layers)
-        classifier_layers.extend([nn.Flatten(),linear_block(linear_layers[0], linear_layers[1]), linear_block(linear_layers[1], linear_layers[2], activation=False)])
+        classifier_layers.extend([nn.Flatten(),linear_block(linear_layers[0], linear_layers[1]), linear_block(linear_layers[1], linear_layers[2]), linear_block(linear_layers[2], linear_layers[3], activation=False)])
         self.classifier = nn.Sequential(*classifier_layers)
 
     def forward(self, x):
